@@ -1,0 +1,102 @@
+{
+  "happyPath": [
+    {
+      "from_": "john@doe.com",
+      "to": "jane@doe.com",
+      "description": "All fields are filled in with valid values",
+      "message": {
+        "subject": "Sick Leave",
+        "body": "Not feeling well, taking the day off",
+        "signature": {
+          "firstname": "John",
+          "lastname": "Doe",
+          "salutation": "Regards"
+        }
+      }
+    },
+    {
+      "from_": "jane@doe.com",
+      "to": "john@doe.com",
+      "description": "signature is null",
+      "message": {
+        "subject": "Nearing estimate due date",
+        "body": "Hi\n, Please send your work estomation for the sprint in this thread by EOD.",
+        "signature": null
+      }
+    }
+  ],
+  "invalidEmail": [
+    {
+      "from_": null,
+      "to": "jane@doe.com",
+      "description": "email id is null",
+      "message": {
+        "subject": "Sick Leave",
+        "body": "Not feeling well, taking the day off",
+        "signature": {
+          "firstname": "John",
+          "lastname": "Doe",
+          "salutation": "Regards"
+        }
+      }
+    },
+    {
+      "from_": "jane.com",
+      "to": "jane@doe.com",
+      "description": "invalid from email",
+      "message": {
+        "subject": "Sick Leave",
+        "body": "Not feeling well, taking the day off",
+        "signature": {
+          "firstname": "John",
+          "lastname": "Doe",
+          "salutation": "Regards"
+        }
+      }
+    },
+    {
+      "from_": "john@doe.com",
+      "to": "jane.com",
+      "description": "invalid to email",
+      "message": {
+        "subject": "Sick Leave",
+        "body": "Not feeling well, taking the day off",
+        "signature": {
+          "firstname": "John",
+          "lastname": "Doe",
+          "salutation": "Regards"
+        }
+      }
+    }
+  ],
+  "invalidMessage" : [
+    {
+      "from_": "john@doe.com",
+      "to": "jane@doe.com",
+      "description": "Subject is null",
+      "message": {
+        "subject": null,
+        "body": "Not feeling well, taking the day off",
+        "signature": {
+          "firstname": "John",
+          "lastname": "Doe",
+          "salutation": "Regards"
+        }
+      }
+    },
+    {
+      "from_": "john@doe.com",
+      "to": "jane@doe.com",
+      "description": "Body is null",
+      "message": {
+        "subject": "Sick Leave",
+        "body": null,
+        "signature": {
+          "firstname": "John",
+          "lastname": "Doe",
+          "salutation": "Regards"
+        }
+      }
+    }
+  ]
+}
