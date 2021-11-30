@@ -10,4 +10,4 @@ To demonstrate the concept, I have written a sample email service with minimal l
 
 * data resolvers can be found [here](https://github.com/karthi2103/pytest_test_data_handler/blob/main/tests/data_util/data_resolver.py)
 
-* for detailed explaination check this blog [post]()
+* for detailed explaination check this blog [post](https://www.testcult.com/handle-test-data-the-right-way-in-pytest/)
